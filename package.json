@@ -14,8 +14,22 @@
     "rollup",
     "kaoniqiwa"
   ],
-  "author": "",
+  "author": "kaoniqiwa",
+  "engines": {
+    "node": ">=18"
+  },
   "license": "ISC",
+  "homepage": "https://github.com/kaoniqiwa/my-rollup-starter-lib/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaoniqiwa/my-rollup-starter-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaoniqiwa/my-rollup-starter-lib/issues"
+  },
+  "bin": {
+    "kaoni": "bin/kaoni"
+  },
   "devDependencies": {
     "@rollup/plugin-buble": "^1.0.3",
     "@rollup/plugin-commonjs": "^25.0.7",
