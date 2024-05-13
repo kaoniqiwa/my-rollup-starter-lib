@@ -1,6 +1,6 @@
 {
   "name": "@kaoniqiwa/my-rollup-starter-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "rollup test",
   "main": "dist/how-long-till-lunch.cjs.js",
   "module": "dist/how-long-till-lunch.esm.js",
