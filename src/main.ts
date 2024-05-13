@@ -5,6 +5,5 @@ export default function howLongUntilLunch(hours = 12, minutes = 30) {
   const millisecondsUntilLunchTime = millisecondsUntil(
     lunchtime(hours, minutes)
   );
-
   return ms(millisecondsUntilLunchTime, { long: true });
 }

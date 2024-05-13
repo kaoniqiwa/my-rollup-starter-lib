@@ -5,5 +5,7 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true
-  }
+  },
+  // 配置文件需要在此声明，否则 @rollup/plugin-typescript 不会处理配置文件
+  "include": ["src/**/*.ts", "rollup.config.ts"]
 }

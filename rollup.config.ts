@@ -1,17 +1,23 @@
-import { RollupOptions, defineConfig } from 'rollup';
-import typescript from '@rollup/plugin-typescript';
-import nodeResolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import buble from '@rollup/plugin-buble';
+import {
+  RollupOptions,
+  defineConfig,
+  type InputOptions,
+  type OutputOptions,
+} from 'rollup';
 
-import configs from './build/config';
+import configs from './build/config.mjs';
+
+interface Config {
+  input: InputOptions;
+  output: OutputOptions;
+}
 
 export default defineConfig((commandArgs) => {
-  return configs.map((config) => {
+  return (configs as Config[]).map((config: Config): RollupOptions => {
     return {
-      input: 'src/main.ts',
+      input: config.input.input,
       output: config.output,
-      plugins: [commonjs(), nodeResolve(), typescript(), buble()],
+      plugins: config.input.plugins,
     } as RollupOptions;
   });
 });
