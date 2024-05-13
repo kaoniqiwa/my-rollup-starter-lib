@@ -29,7 +29,7 @@
     "url": "https://github.com/kaoniqiwa/my-rollup-starter-lib/issues"
   },
   "bin": {
-    "kaoni": "bin/kaoni"
+    "kaoni": "bin/cli"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^1.0.3",
